@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>
+Calculator
+</title>
+<style>
+    h1{
+        font-size:50px;
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        flood-color: #000000;
+        padding: 20px;
+        background-color:brown;
+        border: 10px;
+        border-color: #000000;
+        border-radius:40px;}
+    * {  
+  box-sizing: border-box;  
+  font-family: 'Roboto', sans-serif;  
+  border-radius: 20px;
+}  
+body{
+    background-image: url(https://developer.thingworx.com/-/media/developerportal/Guides/tile-images-for-guides/statistical-calculations.png?h=834&w=938&la=en&hash=CE5E0B77DBFE716042C2E0AA3D3DC854);
+background-blend-mode: hue;
+border-radius: 20px;
+}
+ 
+.btnTop{
+    color: brown;
+}
+.hello{
+    background-color: brown;
+}
+.hero{
+    
+  width: 50px;  
+  margin: auto;  
+  min-height: 10px;  
+  border: solid 2px #000000;  
+  box-shadow: 1px 5px 1px -5px black; 
+  padding: 5px; 
+}
+.btnTop{width: 100px;  
+  margin: auto;  
+  min-height: 10px;  
+  border: solid 1px #3A4655;  
+ box-shadow: 1px 5px 1px -5px   black; 
+  background-color: black;
+  padding: 5px; 
+  color:white;
+  font-size: 100px;
+}
+.calculator{
+    font-size: 10px;
+    color: aliceblue;
+    font-style: calc();
+    font-weight: bolder;
+}
+.display{
+  font-size: 35px;
+    background:white;  
+  width: 100%; -- 
+  height: 100px;  
+  text-align: left;
+  text-align: end;
+  
+}
+
+</style>  
+</head><body>
+    <h1>Welcome to Drago Calculator </h1>
+
+<form name="Calculator" class="calculator">  
+<table aria-placeholder="0" class="hello" cellspacing="15" cellpadding="15" border="10" bgcolor="white" align="center">  
+<tbody><tr>  
+<td>  
+<input type="text" name="Input" size="10" class="display">  
+<br>  
+</td>  
+</tr>  
+<tr>
+<td>
+   
+    <input type="button" name="one" style="font-size:30px" class="hero" value=" 1 " onclick="Calculator.Input.value += '1'">  
+    <input type="button" name="two" style="font-size: 30px;" class="hero" value=" 2 " onclick="Calculator.Input.value+= '2'">
+    <input type="button" name="three" style="font-size:30px" class="hero" value=" 3 " onclick="Calculator.Input.value+='3'">
+    <input type="button" name="add" style="font-size:30px" class="btnTop" value=" + " onclick="Calculator.Input.value+='+'">
+    
+</td></tr>
+
+<tr>
+<td>
+    <input type="button" name="four" style="font-size: 30px;" class="hero" value=" 4 " onclick="Calculator.Input.value+='4'">
+    <input type="button" name="five" style="font-size: 30px;" class="hero" value=" 5 " onclick="Calculator.Input.value+='5'">
+    <input type="button" name="six" style="font-size: 30px;" class="hero" value=" 6 " onclick="Calculator.Input.value+='6'">
+    <input type="button" name="substract" style="font-size:30px" class="btnTop" value=" - " onclick="Calculator.Input.value+='-'">
+</td></tr>
+
+<tr>
+    <td>
+        <input type="button" name="seven" style="font-size: 30px;" class="hero" value=" 7 " onclick="Calculator.Input.value+='7'">
+        <input type="button" name="eight" style="font-size: 30px;" class="hero" value=" 8 " onclick="Calculator.Input.value+='8'">
+        <input type="button" name="nine" style="font-size: 30px;" class="hero" value=" 9 " onclick="Calculator.Input.value+='9'">
+        <input type="button" name="multiply" style="font-size:30px" class="btnTop" value=" x " onclick="Calculator.Input.value+='*'">
+    </td></tr>
+    
+    <tr>
+        <td>
+            <input type="button" name="clear" style="font-size:30px" class="hero" value=" C " onclick="Calculator.Input.value =''">
+            <input type="button" name="zero" style="font-size:30px" class="hero" value=" 0 " onclick="Calculator.Input.value +='0'">
+            <input type="button" name="result" style="font-size:30px" class="hero" value=" = " onclick="Calculator.Input.value= eval(Calculator.Input.value)">
+            <input type="button" name="divide" style="font-size:30px" class="btnTop" value=" / " onclick="Calculator.Input.value+='/'">
+            
+        </td></tr>
+        
+
+        
+
+
+</tbody></table></form></body></html>
